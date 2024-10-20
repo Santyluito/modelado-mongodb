@@ -1,0 +1,17 @@
+use("platzi_store");
+// db.users.find()
+db.orders.insertOne({
+  user_Id: ObjectId("6715308287fc3817fb3d3ebd"),
+  name: "2024-10-20",
+  items: [
+    {
+      name: "Zapatos",
+      price: 120,
+      qty: 1,
+    },{
+      name: "Correa",
+      price: 50,
+      qty: 1,
+    },
+  ],
+});
