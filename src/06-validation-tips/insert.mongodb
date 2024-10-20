@@ -1,0 +1,12 @@
+use("platzi_store");
+
+db.users.insertOne({
+  last_name: "Matamoros",
+  name: "Luis",
+  email: "luis@platzi.com",
+  password: "Password123",
+  role: "seller",
+  age: 19,
+  isSingle: true,
+  social_accounts: ['twitter', 'facebook',]
+});
