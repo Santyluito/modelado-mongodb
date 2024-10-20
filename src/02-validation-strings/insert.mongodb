@@ -1,0 +1,8 @@
+use("platzi_store");
+
+db.users.insertOne({
+  last_name: "Matamoros",
+  name: "Luis",
+  email: "luis@platzi.com",
+  password: "password",
+});
