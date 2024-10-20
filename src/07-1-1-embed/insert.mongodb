@@ -1,0 +1,18 @@
+use("platzi_store");
+
+db.users.insertOne({
+  email: "genny@platzi.com",
+  password: "Password456",
+  role: "admin",
+  social_accounts: ["twitter", "facebook"],
+  address: {
+    street: "los naranjos",
+    city: "Manta",
+    zip: "110336",
+  },
+  zipping_address: {
+    street: "villaflora",
+    city: "Manta",
+    zip: "110300",
+  },
+});
