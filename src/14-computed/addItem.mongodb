@@ -1,0 +1,19 @@
+// 671550af38f677ea17f1ec34
+use("platzi_store");
+
+db.orders.updateOne(
+  { _id: ObjectId("671550af38f677ea17f1ec34") },
+  {
+    $push: {
+      items: {
+        name: "Ptroducto 3",
+        price: 90,
+        qty: 1,
+        product_id: ObjectId("671545253fc93a93990ef7d3"),
+      },
+    },
+    $inc: {
+      total: 12 * 1,
+    },
+  }
+);
