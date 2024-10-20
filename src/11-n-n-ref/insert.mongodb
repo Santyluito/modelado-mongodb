@@ -1,0 +1,20 @@
+use("platzi_store");
+
+db.products.insertMany([
+  {
+    name: "Ptroducto 1",
+    sizes: ["L", "M", "G"],
+    price: 12,
+  },
+  {
+    name: "Ptroducto 2",
+    sizes: ["L"],
+    price: 45,
+  },
+  {
+    name: "Ptroducto 3",
+    sizes: ["M", "G"],
+    price: 90,
+  },
+]);
+
