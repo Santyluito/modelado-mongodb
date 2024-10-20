@@ -1,0 +1,10 @@
+use("platzi_store"); // Selecciona la base de datos
+// db.createCollection("ventas"); // Crea la colección de ventas
+db.ventas.find()
+db.ventas.insertMany([
+  { _id: 1, ingreso: 100 },
+  { _id: 2, ingreso: 200 },
+  { _id: 3, ingreso: 300 }
+]);
+
+

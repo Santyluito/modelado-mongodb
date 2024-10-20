@@ -1,0 +1,5 @@
+use("platzi_store");
+db.ventas.insertMany([
+  { _id: 4, ingreso: 400 },
+]);
+db.ventas.find()

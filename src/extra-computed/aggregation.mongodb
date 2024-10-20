@@ -1,0 +1,14 @@
+use("platzi_store");
+db.total_ingresos.find();
+
+db.ventas.aggregate([
+  {
+    $group: {
+      _id: null,
+      totalIngresos: { $sum: "$ingreso" }
+    }
+  },
+  {
+    $out: "total_ingresos"
+  }
+]);
